@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+
+.login-box {
+    width: 75%;
+    margin: 70px auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    text-align: center;
+    height: 65%;
+}
+.login-box .user-box input[type="email"],
+.login-box .user-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #f0a453;
+    color: #f0a453;
+    font-family: "Quicksand", sans-serif;
+    outline: none;
+    border-radius: 5px;
+    resize: none; /* Evita que el textarea se redimensione */
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+.login-box .user-box label {
+    color: #f0a453;
+    font-size: 18px;
+    position: absolute;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    left: 0;
+    padding: 10px 0;
+}
+
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #f0a453;    
+    text-align: center;
+    font-size: 35px;
+
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #f0a453;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #f0a453    ;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #f0a453;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #f0a453;
+    font-size: 12px;
+}
+/* Efecto hover y foco en los campos de entrada y textarea */
+.login-box .user-box input[type="email"]:focus,
+.login-box .user-box input[type="email"]:hover,
+.login-box .user-box textarea:focus,
+.login-box .user-box textarea:hover {   
+    border-bottom: 2px solid #b4916b;
+    background: rgba(255, 255, 255, 0.2); /* Fondo semi-transparente al enfocar */
+    border-radius: 10px; /* Bordes redondeados al enfocar */
+}
+
+.login-box .user-box textarea:focus ~ label,
+.login-box .user-box textarea:not(:placeholder-shown) ~ label {
+    top: -24px;
+    font-size: 12px;
+    color: #f0a453;
+}
+
+
+.login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #bfac98;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+
+.login-box a:hover {
+    background: #bfac98;
+    color: #000;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #bfac98,
+        0 0 25px #caaa87,
+        0 0 50px #ebb377,
+        0 0 100px #f0a453;
+}
+
+.login-box a span {
+    position: absolute;
+    display: block;
+}
+
+.login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #bfac98);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #f0a453);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #f0a453);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #f0a453);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
