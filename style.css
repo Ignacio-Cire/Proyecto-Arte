@@ -18,12 +18,35 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
     transition: all 0.4s ease;
 }
+/*maria.arte*/
+
+.google-color-1 {
+    color: #4285F4; /* Azul */
+}
+
+.google-color-2 {
+    color: #EA4335; /* Rojo */
+}
+
+.google-color-3 {
+    color: #FBBC05; /* Amarillo */
+}
+
+.google-color-4 {
+    color: #34A853; /* Verde */
+}
+
+.google-color-5 {
+    color: #F4B400; /* Un color similar a amarillo para el punto */
+}
+
 
 .nav div.logo {
     float: left;
     width: auto;
     height: auto;
     padding-left: 3rem;
+    margin-top: -2%;
 }
 
 .nav div.logo a {

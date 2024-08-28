@@ -15,7 +15,8 @@ body {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.4);
     transition: all 0.4s ease;
-    z-index: 1000; /* Aumenta el z-index para asegurar que el nav esté por encima */
+    z-index: 1000;
+    /* Aumenta el z-index para asegurar que el nav esté por encima */
 }
 
 .nav div.logo {
@@ -28,7 +29,7 @@ body {
 
 .nav div.logo a {
     text-decoration: none;
-    
+
     font-size: 2.5rem;
 }
 
@@ -71,13 +72,16 @@ body {
 /*nav desaparece*/
 /* CSS para el nav */
 .nav {
-    transition: opacity 0.5s ease; /* Transición suave para la opacidad */
-    opacity: 1; /* Opacidad inicial */
+    transition: opacity 0.5s ease;
+    /* Transición suave para la opacidad */
+    opacity: 1;
+    /* Opacidad inicial */
 }
 
 /* Clase para ocultar el nav */
 .nav.hidden {
-    opacity: 0; /* Hace el nav invisible */
+    opacity: 0;
+    /* Hace el nav invisible */
 }
 
 /*class home con foto de fondo*/
@@ -86,8 +90,8 @@ body {
     height: 150vh;
     background-position: center top;
     background-size: cover;
-    background-image: url(./img/COPYART-LIBRO/unnamed\ \(5\).jpg);
-    
+    background-image: url(./img/Grabado-Aguafuerte/unnamed.jpg);
+
 
 }
 
@@ -394,7 +398,7 @@ hr {
     font-size: 30px;
 }
 
-.copy-libro{
+.copy-libro {
     background-color: #000;
     color: #fff;
     font-size: 65%;
@@ -597,13 +601,15 @@ hr {
     overflow: hidden;
 }
 
-/* Asegúrate de que las imágenes del carrusel se ajusten correctamente */
 .carousel-item img {
     width: 100%;
     height: auto;
     max-height: calc(100vh - 65px - 100px);
-    object-fit: cover;
+    /* Ajusta este valor según el tamaño de tu nav y otros elementos */
+    object-fit: contain;
+    /* Cambia de 'cover' a 'contain' */
 }
+
 
 .carousel-inner {
     display: flex;
@@ -678,29 +684,37 @@ hr {
     /* Posición derecha para el control "next" */
 }
 
-.slide-mov{
+.slide-mov {
     margin-top: auto;
 }
+
+
+
 
 
 /*maria.arte*/
 
 .google-color-1 {
-    color: #4285F4; /* Azul */
+    color: #4285F4;
+    /* Azul */
 }
 
 .google-color-2 {
-    color: #EA4335; /* Rojo */
+    color: #EA4335;
+    /* Rojo */
 }
 
 .google-color-3 {
-    color: #FBBC05; /* Amarillo */
+    color: #FBBC05;
+    /* Amarillo */
 }
 
 .google-color-4 {
-    color: #34A853; /* Verde */
+    color: #34A853;
+    /* Verde */
 }
 
 .google-color-5 {
-    color: #F4B400; /* Un color similar a amarillo para el punto */
+    color: #F4B400;
+    /* Un color similar a amarillo para el punto */
 }
