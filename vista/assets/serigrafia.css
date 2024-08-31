@@ -68,6 +68,27 @@ body {
     color: #bfac98;
 }
 
+/*maria.arte nav */
+.color-1 {
+    color: #ad66a9; /* Pearl Bush */
+}
+
+.color-2 {
+    color: #ad66a9; /* Bison Hide */
+}
+
+.color-3 {
+    color: #ad66a9; /* Stonewall */
+}
+
+.color-4 {
+    color: #ad66a9; /* Soya Bean */
+}
+
+.color-5 {
+    color: #ad66a9; /* Old Copper */
+}
+
 /*nav desaparece*/
 /* CSS para el nav */
 .nav {
@@ -86,7 +107,7 @@ body {
     height: 150vh;
     background-position: center top;
     background-size: cover;
-    background-image: url(./img/serigrafia/fhfh.jpg);
+    background-image: url(./img/serigrafia/trfh.jpg);
     
 
 }

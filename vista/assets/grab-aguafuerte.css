@@ -18,6 +18,27 @@ body {
     z-index: 1000; /* Aumenta el z-index para asegurar que el nav esté por encima */
 }
 
+/*maria.arte nav */
+.color-1 {
+    color: #ad66a9; /* Pearl Bush */
+}
+
+.color-2 {
+    color: #ad66a9; /* Bison Hide */
+}
+
+.color-3 {
+    color: #ad66a9; /* Stonewall */
+}
+
+.color-4 {
+    color: #ad66a9; /* Soya Bean */
+}
+
+.color-5 {
+    color: #ad66a9; /* Old Copper */
+}
+
 .nav div.logo {
     float: left;
     width: auto;
@@ -86,7 +107,7 @@ body {
     height: 150vh;
     background-position: center top;
     background-size: cover;
-    background-image: url(./img/COPYART-LIBRO/unnamed\ \(5\).jpg);
+    background-image: url(./img/Grabado-Aguafuerte/unnamed\ \(1\).jpg);
     
 
 }
