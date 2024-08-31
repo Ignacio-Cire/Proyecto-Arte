@@ -590,97 +590,69 @@ hr {
 
 /*SLIDE*/
 /* Estilos para el carousel */
-.carousel {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-    overflow: hidden;
-}
 
-/* Asegúrate de que las imágenes del carrusel se ajusten correctamente */
-.carousel-item img {
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .gallery-item {
+    flex: 0 0 calc(33.333% - 10px);
+    max-width: calc(33.333% - 10px);
+  }
+  
+  .gallery-img {
     width: 100%;
     height: auto;
-    max-height: calc(100vh - 65px - 100px);
-    object-fit: cover;
-}
-
-.carousel-inner {
-    display: flex;
-    /* Usa un contenedor flexible para los items del carousel */
-    transition: transform 0.5s ease;
-    /* Efecto de transición al cambiar los items */
-}
-
-.carousel-item {
-    flex: 0 0 100%;
-    /* Hace que cada item ocupe el 100% del ancho */
-    width: 100%;
-    /* Ancho completo para cada item */
-}
-
-.carousel-item img {
-    width: 100%;
-    /* Ajusta la imagen del carousel al ancho completo */
-    height: 400px;
-    /* Altura fija para la imagen */
-    object-fit: cover;
-    /* Ajusta la imagen para cubrir el contenedor */
-    position: relative;
-    /* Posición relativa para la imagen */
-}
-
-.carousel-caption {
-    position: absolute;
-    /* Posición absoluta para la caption */
-    bottom: 20px;
-    /* Distancia desde la parte inferior */
-    left: 20px;
-    /* Distancia desde la izquierda */
-    background-color: rgba(0, 0, 0, 0.7);
-    /* Fondo semi-transparente para la caption */
-    color: #fff;
-    /* Color del texto de la caption */
-    padding: 10px;
-    /* Relleno interno de la caption */
-    text-align: center;
-    /* Alineación del texto */
-}
-
-.carousel-control {
-    position: absolute;
-    /* Posición absoluta para los controles del carousel */
-    top: 50%;
-    /* Alinea los controles verticalmente al centro */
-    transform: translateY(-50%);
-    /* Ajusta la posición verticalmente */
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Fondo semi-transparente para los controles */
-    color: #fff;
-    /* Color del texto de los controles */
-    border: none;
-    /* Sin borde */
-    padding: 10px 15px;
-    /* Relleno interno de los controles */
-    font-size: 18px;
-    /* Tamaño de la fuente de los controles */
     cursor: pointer;
-    /* Cambia el cursor a un puntero al pasar el mouse */
-}
-
-.carousel-control.prev {
-    left: 10px;
-    /* Posición izquierda para el control "prev" */
-}
-
-.carousel-control.next {
-    right: 10px;
-    /* Posición derecha para el control "next" */
-}
-
-.slide-mov{
-    margin-top: auto;
-}
+    transition: 0.3s;
+  }
+  
+  .gallery-img:hover {
+    opacity: 0.7;
+  }
+  
+  .lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .lightbox-content {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    max-height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover,
+  .close-btn:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
 
 /*maria.arte*/
