@@ -40,6 +40,31 @@ body {
     color: #F4B400; /* Un color similar a amarillo para el punto */
 }
 
+/*maria.arte nav */
+.color-1 {
+    color: #ad66a9; /* Pearl Bush */
+}
+
+.color-2 {
+    color: #ad66a9; /* Bison Hide */
+}
+
+.color-3 {
+    color: #ad66a9; /* Stonewall */
+}
+
+.color-4 {
+    color: #ad66a9; /* Soya Bean */
+}
+
+.color-5 {
+    color: #ad66a9; /* Old Copper */
+}
+
+
+
+
+
 
 .nav div.logo {
     float: left;

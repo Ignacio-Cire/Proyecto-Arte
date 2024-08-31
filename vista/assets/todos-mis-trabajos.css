@@ -18,6 +18,15 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
     transition: all 0.4s ease;
 }
+
+
+/*PORTAFOLIO*/
+
+
+
+
+
+
 /*maria.arte*/
 
 .google-color-1 {
@@ -38,7 +47,30 @@ body {
 
 .google-color-5 {
     color: #F4B400; /* Un color similar a amarillo para el punto */
+
+
 }
+/*maria.arte nav */
+.color-1 {
+    color: #ad66a9; /* Pearl Bush */
+}
+
+.color-2 {
+    color: #ad66a9; /* Bison Hide */
+}
+
+.color-3 {
+    color: #ad66a9; /* Stonewall */
+}
+
+.color-4 {
+    color: #ad66a9; /* Soya Bean */
+}
+
+.color-5 {
+    color: #ad66a9; /* Old Copper */
+}
+
 
 
 .nav div.logo {

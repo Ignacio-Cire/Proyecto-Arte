@@ -23,27 +23,28 @@
     <nav class="nav">
         <div class="container">
             <div class="logo">
-                <a href="#">
+                <a href="./index.html">
                     <h3>
-                        <span class="google-color-1">M</span>
-                        <span class="google-color-2">a</span>
-                        <span class="google-color-3">r</span>
-                        <span class="google-color-4">i</span>
-                        <span class="google-color-1">a</span>
-                        <span class="google-color-5">.</span>
-                        <span class="google-color-2">A</span>
-                        <span class="google-color-3">r</span>
-                        <span class="google-color-4">t</span>
-                        <span class="google-color-1">e</span>
+                        <span class="color-1">M</span>
+                        <span class="color-2">a</span>
+                        <span class="color-3">r</span>
+                        <span class="color-4">i</span>
+                        <span class="color-1">a</span>
+                        <span class="color-5">.</span>
+                        <span class="color-2">A</span>
+                        <span class="color-3">r</span>
+                        <span class="color-4">t</span>
+                        <span class="color-1">e</span>
                     </h3>
                 </a>
+                
             </div>
             <div id="mainListDiv" class="main_list">
                 <ul class="navlinks">
-                    <li><a href="#">Inicio</a></li>
+                    <li><a href="./index.html">Inicio</a></li>
                     <li><a href="#myH2">Acerca de mi</a></li>
-                    <li><a href="#">Portafolio</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#myH3">Portafolio</a></li>
+                    <li><a href="#formulario">Contacto</a></li>
                 </ul>
             </div>
             <span class="navTrigger">
@@ -77,10 +78,10 @@
 
     <!--portafolio de trabajos-->
 
-    <div id="myH3">
+    <div id="myH3" >
 
         <h2 class="myH3" ">  <div class=" ver-todos-container">
-            <a href="" class="ver-todos-btn">Ver todos mis trabajos</a>
+            <a href="./todos-mis-trabajos.html" class="ver-todos-btn">Ver todos mis trabajos</a>
     </div>
     </h2>
 
@@ -108,7 +109,7 @@
 
     <!--FORMULARIO-->
 
-    <div class="login-box">
+    <div class="login-box" id="formulario">
         <h2>Escribime</h2>
         <form id="loginForm" method="POST">
             <!-- Campo para el correo electrónico -->
@@ -116,9 +117,10 @@
                 <input type="email" id="usuario" required>
                 <label>E-mail</label>
             </div>
+
             <!-- Área de texto para comentarios -->
             <div class="user-box">
-                <textarea id="comentarios" rows="4" cols="50" placeholder=""></textarea>
+                <textarea id="comentarios" rows="15" cols="50" placeholder=""></textarea>
                 <label>Comentarios</label>
             </div>
             <!-- Botón de enviar -->

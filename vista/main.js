@@ -58,3 +58,31 @@ window.addEventListener('resize', () => {
 });
 window.addEventListener('mousemove', handleMouseMove);
 
+
+
+//SCROLL SUAVE
+
+
+    $(document).ready(function () {
+        // Selecciona todos los enlaces que comienzan con un "#"
+        $('a[href^="#"]').on('click', function (event) {
+            // Previene el comportamiento por defecto
+            event.preventDefault();
+
+            // Guarda el destino del enlace en una variable
+            var target = this.hash;
+            var $target = $(target);
+
+            // Anima el scroll hacia el destino
+            $('html, body').animate({
+                scrollTop: $target.offset().top
+            }, 800, function () {
+                // Cambia el foco de la URL al destino
+                window.location.hash = target;
+            });
+        });
+    });
+
+
+
+
