@@ -657,3 +657,44 @@ hr {
 }
 
 
+/*VER TODOS MIS TRABAJOS*/
+.ver-todos-container {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+:root {
+    --color-duration: 0.3s; /* Duración para cada color */
+}
+
+.ver-todos-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: colorChange calc(9 * var(--color-duration)) infinite;
+}
+
+.ver-todos-btn:hover {
+    animation-play-state: paused;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes colorChange {
+    0%, 100% { background-color: #E0D8C1; }  /* Pearl Bush */
+    11.11% { background-color: #D1B399; }    /* Bison Hide */
+    22.22% { background-color: #928778; }    /* Stonewall */
+    33.33% { background-color: #BEB49F; }    /* Soya Bean */
+    44.44% { background-color: #CEC9B3; }    /* Pale Oyster */
+    55.55% { background-color: #817A6F; }    /* Armadillo */
+    66.66% { background-color: #9C7E5D; }    /* Pale Brown */
+    77.77% { background-color: #976B4F; }    /* Old Copper */
+    88.88% { background-color: #806854; }    /* Tobacco Brown */
+}
