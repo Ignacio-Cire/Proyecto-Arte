@@ -86,3 +86,33 @@ window.addEventListener('mousemove', handleMouseMove);
 
 
 
+// enviar mail formulario 
+// Inicializa EmailJS con tu ID de usuario
+(function () {
+    emailjs.init('TU_ID_DE_USUARIO');
+})();
+
+// Maneja el evento de clic en el botón de envío
+document.getElementById('submitBtn').addEventListener('click', function (event) {
+    event.preventDefault(); // Previene la acción predeterminada del enlace
+
+    // Obtiene los valores de los campos del formulario
+    var usuario = document.getElementById('usuario').value;
+    var comentarios = document.getElementById('comentarios').value;
+
+    // Configura los parámetros del template
+    var templateParams = {
+        usuario: usuario,
+        comentarios: comentarios
+    };
+
+    // Envía el correo usando EmailJS
+    emailjs.send('TU_ID_DEL_SERVICIO', 'TU_ID_DE_LA_PLANTILLA', templateParams)
+        .then(function (response) {
+            console.log('Correo enviado con éxito', response.status, response.text);
+            alert('¡Mensaje enviado exitosamente!');
+        }, function (error) {
+            console.log('Falló el envío del correo', error);
+            alert('Hubo un error al enviar el mensaje. Inténtalo de nuevo.');
+        });
+});
